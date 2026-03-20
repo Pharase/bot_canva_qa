@@ -11,7 +11,7 @@ test('Valentine Love Song Quiz flow', async ({ page }) => {
 
   await quiz.goto();
   await quiz.expectTitleVisible();
-  await quiz.fillUserInfo('PAMC', 'PRO พนักงานระดับล่าง O5', 'PAMC', 'PAMC');
+  await quiz.fillUserInfo('BU', 'name', 'bu', 'bu');
   await quiz.startQuiz();
 
   for (const { answer } of quizAnswers) {
